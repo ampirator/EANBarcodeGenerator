@@ -1,0 +1,6 @@
+framework module EANBarcodeGenerator {
+  umbrella header "EANBarcodeGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

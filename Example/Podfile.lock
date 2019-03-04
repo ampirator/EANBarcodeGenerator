@@ -1,0 +1,16 @@
+PODS:
+  - EANBarcodeGenerator (0.1.0)
+
+DEPENDENCIES:
+  - EANBarcodeGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  EANBarcodeGenerator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EANBarcodeGenerator: 30e3421a94592fe9a31735324aca31bd47ba0eb2
+
+PODFILE CHECKSUM: 6eb12bfd70f9c262524ec5e4c6232496e8bcbeb3
+
+COCOAPODS: 1.5.3

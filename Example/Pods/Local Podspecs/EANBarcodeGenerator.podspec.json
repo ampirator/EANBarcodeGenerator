@@ -1,0 +1,22 @@
+{
+  "name": "EANBarcodeGenerator",
+  "version": "0.1.0",
+  "summary": "A short description of EANBarcodeGenerator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ampirator/EANBarcodeGenerator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ampirator": "sergey.bayborodov@piano.io"
+  },
+  "source": {
+    "git": "https://github.com/ampirator/EANBarcodeGenerator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EANBarcodeGenerator/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_EANBarcodeGenerator_Tests {
+  umbrella header "Pods-EANBarcodeGenerator_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

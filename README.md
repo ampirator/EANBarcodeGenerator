@@ -1,6 +1,6 @@
 # EANBarcodeGenerator
 
-[![CI Status](https://img.shields.io/travis/ampirator/EANBarcodeGenerator.svg?style=flat)](https://travis-ci.com/ampirator/EANBarcodeGenerator)
+[![CI Status](https://img.shields.io/travis/com/ampirator/EANBarcodeGenerator.svg?style=flat)](https://travis-ci.com/ampirator/EANBarcodeGenerator)
 [![Version](https://img.shields.io/cocoapods/v/EANBarcodeGenerator.svg?style=flat)](https://cocoapods.org/pods/EANBarcodeGenerator)
 [![License](https://img.shields.io/cocoapods/l/EANBarcodeGenerator.svg?style=flat)](https://cocoapods.org/pods/EANBarcodeGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/EANBarcodeGenerator.svg?style=flat)](https://cocoapods.org/pods/EANBarcodeGenerator)

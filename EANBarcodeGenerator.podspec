@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EANBarcodeGenerator'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'EAN-13, UPC-A barcode generator.'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ This generator was created for iOS application PokeWall (https://itunes.apple.co
   s.author           = { 'Sergey Bayborodov' => 'ampirator@gmail.com' }
   s.source           = { :git => 'https://github.com/ampirator/EANBarcodeGenerator.git', :tag => s.version.to_s }
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'EANBarcodeGenerator/Classes/**/*'

@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/EANBarcodeGenerator.svg?style=flat)](https://cocoapods.org/pods/EANBarcodeGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/EANBarcodeGenerator.svg?style=flat)](https://cocoapods.org/pods/EANBarcodeGenerator)
 
-EANBarcodeGenerator provides CIFilter `CIEANBarcodeGenerator` for generating EAN-13, UPC-A barcodes. This generator was created for iOS application PokeWall (https://itunes.apple.com/us/app/pokewall/id1449455385)
+EANBarcodeGenerator provides CIFilter `CIEANBarcodeGenerator` for generating EAN-13, EAN-8 and UPC-A barcodes. This generator was created for iOS application PokeWall (https://itunes.apple.com/us/app/pokewall/id1449455385)
 
 ## Example
 

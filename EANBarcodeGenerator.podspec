@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'EANBarcodeGenerator'
-  s.version          = '0.2.0'
-  s.summary          = 'EAN-13, UPC-A barcode generator.'
+  s.version          = '0.3.0'
+  s.summary          = 'EAN-13, EAN-8, UPC-A barcode generator.'
 
   s.description      = <<-DESC
-EANBarcodeGenerator provides CIFilter witch allows to generate EAN-13, UPC-A barcodes.
+EANBarcodeGenerator provides CIFilter witch allows to generate EAN-13, EAN-8 and UPC-A barcodes.
 This generator was created for iOS application PokeWall (https://itunes.apple.com/us/app/pokewall/id1449455385)
                        DESC
 

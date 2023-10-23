@@ -75,7 +75,7 @@ public class CIEANBarcodeGenerator: CIFilter {
         CIFilter.registerName("CIEANBarcodeGenerator",
                               constructor: CIEANBarcodeGeneratorConstructor(),
                               classAttributes: [
-                                kCIAttributeFilterDisplayName: "EAN-13 UPC-A barcode generator",
+                                kCIAttributeFilterDisplayName: "EAN-13 EAN-8 UPC-A barcode generator",
                                 kCIAttributeFilterCategories: [kCICategoryBuiltIn]
             ]
         )
@@ -99,8 +99,10 @@ public class CIEANBarcodeGenerator: CIFilter {
             return drawEAN13(barcode: barcode)
         } else if validateUPCABarcode(barcode) {
             return drawUPCA(barcode: barcode)
+        } else if validateEAN8Barcode(barcode) {
+            return drawEAN8(barcode: barcode)
         } else {
-            print("Invalid barcode. (Should be EAN-13 or UPC-A barcode)")
+            print("Invalid barcode. (Should be EAN-13, EAN-8 or UPC-A barcode)")
             return nil
         }
     }        
@@ -129,6 +131,14 @@ public class CIEANBarcodeGenerator: CIFilter {
         let leftPartPattern = CIEANBarcodeGenerator.leftPartMap.first!
         let leftPart = [Int8](barcode[0...5])
         let rightPart = [Int8](barcode[6...11])
+        let bars = prepareBars(leftPart: leftPart, rightPart: rightPart, leftPartPattern: leftPartPattern)
+        return drawBarcode(bars: bars)
+    }
+    
+    private func drawEAN8(barcode: [Int8]) -> CIImage? {
+        let leftPartPattern = CIEANBarcodeGenerator.leftPartMap.first!
+        let leftPart = [Int8](barcode[0...3])
+        let rightPart = [Int8](barcode[4...7])
         let bars = prepareBars(leftPart: leftPart, rightPart: rightPart, leftPartPattern: leftPartPattern)
         return drawBarcode(bars: bars)
     }
@@ -216,7 +226,7 @@ public class CIEANBarcodeGenerator: CIFilter {
             return false
         }
         
-        return checkSum(barcode) == 0
+        return checkSum(barcode)
     }
     
     private func validateUPCABarcode(_ barcode: [Int8]) -> Bool {
@@ -224,16 +234,38 @@ public class CIEANBarcodeGenerator: CIFilter {
             return false
         }
         
-        return checkSum(barcode) == 0
+        return checkSum(barcode)
     }
     
-    private func checkSum(_ barcode: [Int8]) -> Int8 {
-        var checkSum:Int8 = 0
-        for i in 0..<barcode.count {
-            checkSum = (checkSum + (i % 2 == 0 ? barcode[i] : barcode[i] * 3)) % 10
+    private func validateEAN8Barcode(_ barcode: [Int8]) -> Bool {
+        guard barcode.count == 8 else {
+            return false
         }
         
-        return checkSum
+        return checkSum(barcode)
+    }
+    
+    private func checkSum(_ barcode: [Int8]) -> Bool {
+        
+        var evenNumbersSum:Int8 = 0
+        var oddNumbersSum:Int8 = 0
+        
+        // Removes the checkdigit (last digit) of the EAN/UPC-A barcode
+        let barcodeWithoutCheckdigit = barcode[0...(barcode.endIndex - 1 - 1)]
+        
+        // Calculate checkdigit by iterating the barcode from right to left (skipping provided checkdigit)
+        for i in barcodeWithoutCheckdigit.indices.reversed() {
+            // As the code is interpreted from right to left, the index starts with 1 (without checkdigit) on the right side. Definition: https://en.wikipedia.org/wiki/International_Article_Number#Calculation_of_checksum_digit
+            if ((barcodeWithoutCheckdigit.count - i) % 2 == 0) {
+                evenNumbersSum = evenNumbersSum + barcodeWithoutCheckdigit[i]
+            } else {
+                oddNumbersSum = oddNumbersSum + barcodeWithoutCheckdigit[i] * 3
+            }
+        }
+        let calculatedCheckdigit = (10 - ((oddNumbersSum + evenNumbersSum) % 10)) % 10
+        
+        // Compare checkdigit provided in input barcode with the calculated one
+        return calculatedCheckdigit == barcode.last
     }
 }
 

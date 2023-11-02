@@ -18,11 +18,20 @@ iOS 9.0+
 
 ## Installation
 
+
+### Cocoapods
+
 EANBarcodeGenerator is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'EANBarcodeGenerator'
+```
+
+### Carthage
+
+```ruby
+github "ampirator/EANBarcodeGenerator"
 ```
 
 ## Usage

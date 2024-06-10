@@ -262,7 +262,7 @@ public class CIEANBarcodeGenerator: CIFilter {
                 oddNumbersSum = oddNumbersSum + barcodeWithoutCheckdigit[i] * 3
             }
         }
-        let calculatedCheckdigit = (10 - ((oddNumbersSum + evenNumbersSum) % 10)) % 10
+        let calculatedCheckdigit = (10 - (oddNumbersSum % 10 + evenNumbersSum % 10)) % 10
         
         // Compare checkdigit provided in input barcode with the calculated one
         return calculatedCheckdigit == barcode.last

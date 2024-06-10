@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EANBarcodeGenerator'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'EAN-13, EAN-8, UPC-A barcode generator.'
 
   s.description      = <<-DESC

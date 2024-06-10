@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0785175007A73106A93A3DC06DBD366B /* Pods-EANBarcodeGenerator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA617ECE2F24CD392BECE90889BC31 /* Pods-EANBarcodeGenerator_Tests-dummy.m */; };
 		2C55E80EFB4078AFF1D2DA3047EFBF71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D74F67A301C1BB33C834F373BAF63 /* UIKit.framework */; };
+		50994F772BB44338000FCD8C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 50994F762BB44338000FCD8C /* PrivacyInfo.xcprivacy */; };
 		79909807BDB8F7882E0818F132F6636D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20873640661589F0832C91DF1352675 /* Foundation.framework */; };
 		84DEBA5097E34AD773AF01D0C5013531 /* EANBarcodeGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0342F263D333F40CED611CAE4A05761E /* EANBarcodeGenerator-dummy.m */; };
 		9F9E195BAB7CF92133738C6B9F02857C /* Pods-EANBarcodeGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5792C26731B7BCF056F1C1165F9D4701 /* Pods-EANBarcodeGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,11 +42,12 @@
 /* Begin PBXFileReference section */
 		0342F263D333F40CED611CAE4A05761E /* EANBarcodeGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EANBarcodeGenerator-dummy.m"; sourceTree = "<group>"; };
 		07E51A49EA75F1F5E05646BBAA22956E /* Pods-EANBarcodeGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EANBarcodeGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0859C9B0F1EA940F53DD786F86E4EBD7 /* Pods_EANBarcodeGenerator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EANBarcodeGenerator_Tests.framework; path = "Pods-EANBarcodeGenerator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		096A148ABBA10A3642A522CB92A05826 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0859C9B0F1EA940F53DD786F86E4EBD7 /* Pods_EANBarcodeGenerator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EANBarcodeGenerator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		096A148ABBA10A3642A522CB92A05826 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		19E5B2380D5DD0BD393312328C276C40 /* EANBarcodeGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EANBarcodeGenerator.release.xcconfig; sourceTree = "<group>"; };
 		40B42E6ABA08D1F6157B9E12CA4988A2 /* EANBarcodeGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EANBarcodeGenerator.debug.xcconfig; sourceTree = "<group>"; };
 		4B9FA3BBA8A2E3F2D7C99975EF6BEF99 /* Pods-EANBarcodeGenerator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EANBarcodeGenerator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		50994F762BB44338000FCD8C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5792C26731B7BCF056F1C1165F9D4701 /* Pods-EANBarcodeGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EANBarcodeGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
 		5C9DFE62A18E4D3F239F237ADAB26CF9 /* EANBarcodeGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EANBarcodeGenerator.modulemap; sourceTree = "<group>"; };
 		633787D31B02E115726A1647546BBA69 /* Pods-EANBarcodeGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EANBarcodeGenerator_Example-dummy.m"; sourceTree = "<group>"; };
@@ -53,19 +55,19 @@
 		6CDA617ECE2F24CD392BECE90889BC31 /* Pods-EANBarcodeGenerator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EANBarcodeGenerator_Tests-dummy.m"; sourceTree = "<group>"; };
 		6E73D7E5CE9F23C2B870FF35ABD0111D /* Pods-EANBarcodeGenerator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EANBarcodeGenerator_Example-Info.plist"; sourceTree = "<group>"; };
 		6F1E1E7C28CFCA8F8D88FD318A214ABA /* Pods-EANBarcodeGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EANBarcodeGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7045A493215D9A0684A487AB525F53DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7045A493215D9A0684A487AB525F53DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		76124BE1ACE761DB8DEC1BC072BE67F3 /* Pods-EANBarcodeGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EANBarcodeGenerator_Example.modulemap"; sourceTree = "<group>"; };
 		76431329F323B0BE03535405760346AA /* Pods-EANBarcodeGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EANBarcodeGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		77F5A2D15EEC3DD6F776644947070ACC /* Pods-EANBarcodeGenerator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EANBarcodeGenerator_Tests-Info.plist"; sourceTree = "<group>"; };
-		79326E6A16437C42BD0FC998ED88D313 /* EANBarcodeGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EANBarcodeGenerator.framework; path = EANBarcodeGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79326E6A16437C42BD0FC998ED88D313 /* EANBarcodeGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EANBarcodeGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D9C82B95CB257EFDC9EFDFC695857 /* Pods-EANBarcodeGenerator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EANBarcodeGenerator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		79DFAE834336814681C8B7FB37391DE1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		8557744A1AEC0594D2F3F17A2D49A9BC /* EANBarcodeGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EANBarcodeGenerator-prefix.pch"; sourceTree = "<group>"; };
 		8BAF1EB37DBC9479B237CF7BC8D836DB /* Pods-EANBarcodeGenerator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EANBarcodeGenerator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		926787254D240F1F880BBD44EEEB6AD8 /* EANBarcodeGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EANBarcodeGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		926787254D240F1F880BBD44EEEB6AD8 /* EANBarcodeGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EANBarcodeGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D86813F50CB9C9C4279EEC74926BE19 /* Pods-EANBarcodeGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EANBarcodeGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD9B66C1011BB3D55B7750B9C459675B /* Pods_EANBarcodeGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EANBarcodeGenerator_Example.framework; path = "Pods-EANBarcodeGenerator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD9B66C1011BB3D55B7750B9C459675B /* Pods_EANBarcodeGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EANBarcodeGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20873640661589F0832C91DF1352675 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D204DA0D9B52E88D1052BE95353025BB /* EANBarcodeGenerator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EANBarcodeGenerator-Info.plist"; sourceTree = "<group>"; };
 		D61D74F67A301C1BB33C834F373BAF63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -172,6 +174,7 @@
 				926787254D240F1F880BBD44EEEB6AD8 /* EANBarcodeGenerator.podspec */,
 				096A148ABBA10A3642A522CB92A05826 /* LICENSE */,
 				7045A493215D9A0684A487AB525F53DE /* README.md */,
+				50994F762BB44338000FCD8C /* PrivacyInfo.xcprivacy */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50994F772BB44338000FCD8C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +505,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

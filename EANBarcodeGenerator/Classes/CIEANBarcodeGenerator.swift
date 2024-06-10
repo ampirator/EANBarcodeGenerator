@@ -247,8 +247,8 @@ public class CIEANBarcodeGenerator: CIFilter {
     
     private func checkSum(_ barcode: [Int8]) -> Bool {
         
-        var evenNumbersSum:Int8 = 0
-        var oddNumbersSum:Int8 = 0
+        var evenNumbersSum:Int32 = 0
+        var oddNumbersSum:Int32 = 0
         
         // Removes the checkdigit (last digit) of the EAN/UPC-A barcode
         let barcodeWithoutCheckdigit = barcode[0...(barcode.endIndex - 1 - 1)]
@@ -257,15 +257,15 @@ public class CIEANBarcodeGenerator: CIFilter {
         for i in barcodeWithoutCheckdigit.indices.reversed() {
             // As the code is interpreted from right to left, the index starts with 1 (without checkdigit) on the right side. Definition: https://en.wikipedia.org/wiki/International_Article_Number#Calculation_of_checksum_digit
             if ((barcodeWithoutCheckdigit.count - i) % 2 == 0) {
-                evenNumbersSum = evenNumbersSum + barcodeWithoutCheckdigit[i]
+                evenNumbersSum = evenNumbersSum + Int32(barcodeWithoutCheckdigit[i])
             } else {
-                oddNumbersSum = oddNumbersSum + barcodeWithoutCheckdigit[i] * 3
+                oddNumbersSum = oddNumbersSum + Int32(barcodeWithoutCheckdigit[i] * 3)
             }
         }
-        let calculatedCheckdigit = (10 - (oddNumbersSum % 10 + evenNumbersSum % 10)) % 10
+        let calculatedCheckdigit = (10 - (oddNumbersSum  + evenNumbersSum) % 10) % 10
         
         // Compare checkdigit provided in input barcode with the calculated one
-        return calculatedCheckdigit == barcode.last
+        return calculatedCheckdigit == barcode.last!
     }
 }
 
